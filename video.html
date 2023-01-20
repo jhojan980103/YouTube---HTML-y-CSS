@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/icons/style.css">
+    <title>YouTube</title>
+</head>
+<body class="video-page scroll">
+    <header class="main-header">
+        <div class="start place-center">
+            <button class="action-button icon-menu"></button>
+            <a href="/">
+                <img class="logo" src="/image/logo.svg" alt="Logo">
+            </a>
+        </div>
+        <div class="middle place-center">
+            <form class="form-search place-center" action="#">
+                <input type="search" placeholder="Buscar" class="input">
+                <button data-tooltip="Buscar" class="submit icon-search"></button>
+            </form>
+            <button data-tooltip="Haz Busqueda" class="action-button icon-microphone"></button>
+        </div>
+        <div class="place-center buttons-container">
+            <button data-tooltip="Crear" class="action-button icon-camera"></button>
+            <button data-tooltip="App de YouTube" class="action-button icon-grid"></button>
+            <button data-tooltip="Notificaciones" class="action-button icon-bell"></button>
+            <div class="user">
+                <div class="user-avatar">
+                    <img class="image"
+                    src="https://s1.1zoom.me/big3/471/Painting_Art_Back_view_Photographer_575380_3840x2400.jpg" 
+                    alt="Foto del usuario">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="video-page-grid">
+        <main class="video-column">
+            <section class="video-player">
+                <iframe class="video"
+                src="https://www.youtube.com/embed/BSCYcH5HUS8" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h1 class="title">El NUEVO juego Shooter GRATIS post-apocaliptico de los creadores de Battlefield.</h1>
+            <div class="actions">
+                <p class="video-information">
+                    <span class="views">250.000 visualizaciones</span>
+                    <span>5 ene 2021</span>
+                </p>
+                <div class="buttons-container">
+                    <div class="buttons-container likes">
+                        <button data-tooltip="Me gusta este video" class="action-button has-text">
+                            <span class="icon icon-like-video"></span>
+                            <span>200.000</span>
+                        </button>
+                        <button data-tooltip="No me gusta este video" class="action-button has-text">
+                            <span class="icon icon-dislike-video"></span>
+                            <span>50.000</span>
+                        </button>
+                    </div>
+                    <button data-tooltip="Compartir" class="action-button has-text">
+                        <span class="icon icon-share"></span>
+                        <span>Compartir</span>
+                    </button>
+                    <button data-tooltip="Guardar" class="action-button has-text">
+                        <span class="icon icon-add-list"></span>
+                        <span>Guardar</span>
+                    </button>
+                    <button class="action-button icon icon-horizontal-dots"></button>
+                </div>
+            </div>
+            <hr class="border">
+            </section>
+            <section class="video-player-information flex">
+                <div class="user-avatar">
+                    <img class="image"
+                    src="https://s1.1zoom.me/big3/471/Painting_Art_Back_view_Photographer_575380_3840x2400.jpg" 
+                    alt="Foto del usuario">
+                </div>
+                <div class="content">
+                    <header class="header flex">
+                        <div>
+                            <a href="#" class="channel-name" data-tooltip="Jhojan98">Jhojan98</a>
+                            <p class="subs-count">44.000 suscriptores</p>
+                        </div>
+                        <button class="button">Suscribirme</button>
+                    </header>
+                    <p class="caption rows-text-3">
+                        Arc Raiders es el nuevo juego Shooter cooperativo Free to play de los creadores de Battlefield.
+
+                        ¡Charlemos! 
+                        📷 Instagram: https://www.instagram.com/zedmanyt/
+                        🔴 Twitch: https://www.twitch.tv/zedmantw
+                        🔮 Grupo de Discord: https://discord.gg/wB56qTs
+                        🐤 Twitter: https://twitter.com/zedmanyt
+                    </p>
+                    <button class="action-button has-text">
+                        <span>Mostrar mas</span>
+                    </button>
+                </div>
+            </section>
+            <hr class="big">
+            <section class="comments-section">
+                <header class="comments-information buttons-container">
+                    <p>50 Comentarios</p>
+                    <button class="action-button has-text">
+                        <span class="icon icon-filter"></span>
+                        <span>Ordenar por</span>
+                    </button>
+                </header>
+                <div class="comment-form flex">
+                    <div class="user-avatar">
+                        <img class="image"
+                        src="https://s1.1zoom.me/big3/471/Painting_Art_Back_view_Photographer_575380_3840x2400.jpg" 
+                        alt="Foto del usuario">
+                    </div>
+                    <div action="#" class="form">
+                        <div class="input" contenteditable=""></div>
+                        <div class="buttons-container">
+                            <button class="button link">Cancelar</button>
+                            <button class="button" disabled>Comentar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="comments-grid" id="comments-grid">
+                    <!-- <article class="comment flex">
+                        <div class="user-avatar">
+                            <img class="image"
+                            src="https://s1.1zoom.me/big3/471/Painting_Art_Back_view_Photographer_575380_3840x2400.jpg" 
+                            alt="Foto del usuario">
+                        </div>
+                        <div class="content">
+                            <header class="header">
+                                <a href="#" class="name"><b>Jhojan98</b></a>
+                                <time class="time">Hace una semana</time>
+                            </header>
+                            <p class="text rows-text-3">
+                                Zedman, dos cosas: una es que nunca me aburro de ver tus videos lpm porque son buenardos. La segunda es que pareceré hacerte la pelota, pero es que es verdad y la tercera, necesito saber si algún día aparecerá un juego con opciones de personalización que puedan tener una IA que te "mejore" la forma del cuerpo con respecto a la anatomía humana, porque no puedo pasar más de dos horas intentando personalizar mi personaje en, por ejemplo: Phantasy Star online. Y encima no sé como meterle cola de zorro u otros añadidos :( Y para colmar esto, como que no se puede usar el traje que te venga en gana :I 
+                                Sinceramente, estaría genial que pudieras personalizar hasta la última célula de tu personaje (bueno pixel) aunque sea un juego de pago. Y que tenga modo online de mundo abierto casi infinito como minecraft que se genera a lo random para que pudieras seguir jugando... Y eventos y DLC como GTA V... (Espera, ¿acabo de pensar en la idea de uno de los juegos MÁS AMBICIOSOS dela historia? Ejem.)
+                            </p>
+                            <footer class="buttons-container">
+                                <button class="action-button has-text" data-tooltip="Me gusta">
+                                    <span class="icon icon-like-video"></span>
+                                    <span class="text">10</span>
+                                </button>
+                                <button class="action-button has-text" data-tooltip="No me gusta">
+                                    <span class="icon icon-dislike-video"></span>
+                                </button>
+                                <button class="action-button has-text">
+                                    <span class="text">Responder</span>
+                                </button>
+                            </footer>
+                        </div>
+                    </article> -->
+                </div>
+            </section>
+        </main>
+        <aside class="cards-sidebar" id="card-grid">
+            <!-- <article class="card-video in-sidebar">
+                <a class="cover" href="#">
+                    <img class="image"
+                    src="https://images.pexels.com/photos/10588331/pexels-photo-10588331.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
+                    alt="Poster del video">
+                    <time class="time">7:30</time>
+                </a>
+                <div class="content">
+                    <h3 class="title rows-text-2">
+                        <a href="/video.html">Titulo del video</a>
+                    </h3>
+                    <a href="#">Jhojan98</a>
+                    <p class="video-information">
+                        <span class="views">100.000 visualizaciones</span>
+                        <span>Hace 1 semana</span>
+                    </p>
+                </div>
+            </article> -->
+        </aside>
+    </div>
+
+    <script src="/js/scripts/comment.js" type="module"></script>
+    <script src="/js/scripts/cards.js" type="module"></script>
+</body>
+</html>
